@@ -1,26 +1,40 @@
 # Rewrite rules
 
+## What the rewrite is for
+
+The rewrite shows how AI changed the person's work. It only touches lines where AI or agents are, or plausibly are, part of the work, or a missing line the target role needs. Pre-AI results stay as written and are labelled "keep, pre-AI". Generic gaps go in the Trust checks list, not the rewrite.
+
 ## The formula
 
-> Accomplished [X] against [baseline], measured by [Y], by doing [Z]. Optional: proved by [W].
+> Did [what the person did with AI or agents], which made [what possible: speed, output, what one person can now ship], checked by [how they checked the work]. Optional: proved by [W].
 
-This is Laszlo Bock's XYZ formula (Google, 2014), updated for the agent era.
+It grows out of Laszlo Bock's XYZ formula (Google, 2014): accomplished X, measured by Y, by doing Z. Here Z is the AI work, X is what it made possible, and the check is new.
 
-- Outcome and baseline first: "Cut weekly reporting from [before] to [after] by..."
-- The person is the subject of the main verb: "Built and tested X", "Led the team that...". Tools and agents can sit in the line as "using X" or "with X". They never do the action. Not "Agents built X", not "a workflow that handles X".
-- Agents at most once in the summary and once per role. Mention them only where the speed gain is the point.
+- Lead with what the person did with AI: "Run my apps alone with a team of AI agents...", "Designed and launched an assistant on [model]...".
+- Then what it made possible: release speed, output, ideas tested, what one person ships that once needed a team. A number with a baseline beats a claim.
+- Then how they checked it: a test set, a review step, a named reviewer role, live users, a pass rate.
+- The person is the subject of the main verb. Tools and agents sit in the line as "using X" or "with X". They never do the action. Not "Agents built X", not "a workflow that handles X".
+- Agents at most once in the summary and once per role.
 - "Proved by" is optional. W must be something a stranger could check: a public link, a named test set, live users, a named reviewer role. If nothing like that exists, leave it out. Don't suggest "available on request".
-- Named tools go in the skills list. Proof goes in the bullets.
+- Named tools and models go in the skills list unless the model choice is the point of the line.
 
 ## Never invent
 
-- No new numbers, tools, product names, dates, periods, team sizes, data sources, reviewers or claims.
-- If the formula needs a fact you don't have, write `[ASK: the exact fact]`, e.g. `[ASK: starting level before the 300% rise]`.
-- No fake percentages. If there's no hard number, use scale, frequency, time or before and after, and only if the CV or the person gave it.
+- No new numbers, tools, models, product names, dates, periods, team sizes, data sources, reviewers or claims.
+- If the formula needs a fact you don't have, write `[ASK: the exact fact]`, e.g. `[ASK: how Alpha's answers were checked]`.
 - Keep the person's real numbers exactly as written. Don't round, convert or combine them.
-- Don't add AI to a line unless the CV or the person says AI was part of that work. If it wasn't, the line can still get a better verb and a baseline.
-- If a line would need more than two `[ASK]` slots, don't write a new line yet. Show the old line and the questions.
+- Don't add AI to a line unless the CV or the person says AI was part of that work. If AI is plausible but unsaid, show the old line and a targeted AI question.
+- Count missing facts, not brackets. If a line is missing more than two facts, don't write a new line yet. Show the old line and the questions. A bracket that asks for two facts counts as two.
 - The values in `examples.md` are placeholders. Never copy one into a real rewrite.
+
+## Targeted AI questions
+
+When the CV has few AI lines, generic questions ("what's the baseline?") don't help. Ask about the AI work itself, tied to a named line or product:
+- What did [AI product] do for users, which models did it run on, and how were its answers checked?
+- Which parts of [product] do agents build, and what do you do?
+- What do you hand to AI each week, and what comes back that you'd have done by hand before?
+- How fast do you ship now compared with before you used agents?
+These go first in the Questions list.
 
 ## Honest verbs
 
@@ -31,20 +45,23 @@ This is Laszlo Bock's XYZ formula (Google, 2014), updated for the agent era.
 | They were part of a team | Co-led, Part of the team that..., My team... |
 | They advised or helped | Advised on, Helped, Supported |
 | They designed and ran a product someone else coded | Designed and ran, Took [product] from X to Y as its product lead |
+| They run the product alone with AI agents writing the code | Run, Design and ship [product] alone, using AI agents to write the code |
 
-When a team result has a solo verb on the CV, fix it and say why in the change list. An honest verb with a real number beats a big verb with a doubt behind it.
+If a line or its role names a team or a team size and uses a solo verb, ask whether the result was solo or team. Don't change the verb until they answer.
 
-## Cuts framing
+## Trust checks
 
-"Restructured", "reduced costs", "reduced headcount", "streamlined the team" read as cuts. Reword toward what the change made possible, but only with facts from the CV or the person:
-- If they told you the outcome: "Moved the team to [given change], which [given result]."
-- If you don't know the outcome: ask, or suggest dropping the line. Never make one up.
-- Never hide a fact the reader needs. Rewording isn't lying.
+One line each, after the rewrite, with no rewritten line. Never put these in the Old and New table:
+- Missing baseline: "[number] has no starting level."
+- Missing period: "[number] has no period."
+- Missing currency or unit: "[number] has no currency" or "[number] doesn't say what it counts."
+- Cuts framing: "Restructured", "reduced costs", "reduced headcount", "streamlined the team" read as cuts. Say what the change made possible, with facts the person gives, or drop it. Never hide a fact the reader needs.
+- Solo verb on a team result: name the line and the honest verb.
 
 ## Old and new table
 
 | Old | New |
 |---|---|
-| (the line exactly as on the CV) | (the rewrite, with [ASK: ...] where needed) |
+| (the line exactly as on the CV, or "(none)" for a missing line) | (the rewrite, with [ASK: ...] where needed) |
 
-After the table, run the self-check in SKILL.md Step 7 and list every [ASK: ...] as a numbered question.
+Under it, list "Keep, pre-AI" lines with a short reason each. Then run the self-check in SKILL.md Step 7.

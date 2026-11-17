@@ -20,6 +20,7 @@ How to apply it:
 - Using a chat or coding tool yourself, however often ("use ChatGPT daily"), is Capable. It becomes Adoptive only with an outcome and baseline, or when it's a workflow they built that produces something named (releases, reports, prototypes) on a schedule or for others.
 - A skill named only in the skills list ("prompt engineering") is Capable for that skill.
 - Skill 7 (judgement) counts any product or business decision with a result, with or without AI. Every other skill needs AI in the line.
+- Skill 9 (leading adoption) counts advisory clients and agent teams the person runs, when named. "Run my apps alone with a team of AI agents" is Capable for skill 9. It's Adoptive with a named output on a schedule, and Transformative with a before and after or checkable proof.
 - Skill 8 (learning speed) needs evidence of change over time (tried, dropped, changed) or a course. Naming the tools someone uses doesn't count for skill 8.
 - The person's answers to "what do you do with AI that isn't on here?" go in a second column, scored with the same rule on the facts they gave. Never assume a number they didn't give. Never mix it into the on-page score.
 - After the rewrite, score `[ASK]` slots as empty.
@@ -36,7 +37,7 @@ How to apply it:
 6. **Building.** Making a working version yourself with AI tools. Shows as: shipped apps, prototypes, demos, repos, ideas tested with users.
 7. **Judgement and taste.** Picking the right problem when doing the work is cheap. Shows as: decisions made and what happened, ideas killed fast, an AI product chosen and launched with a result.
 8. **Learning speed.** How fast their AI use is improving. Shows as: what they tried, dropped and changed in the last 12 months.
-9. **Leading teams through AI adoption.** Getting a whole team working the new way. Shows as: team of N moved to agent workflows, cycle time from X to Y. Never as heads removed.
+9. **Leading teams through AI adoption.** Getting a whole team working the new way. Shows as: team of N moved to agent workflows, cycle time from X to Y. Counts an employer team, an advisory client's team, or a team of AI agents the person runs, when the line names it. Never as heads removed.
 
 ## Weights by target role
 
@@ -60,7 +61,7 @@ Founder / exec covers founder, CPO, CTO, VP and Head of roles. For a role not li
 
 1. Work out the weighted average: sum of (weight x points) divided by sum of weights.
 2. Map it: below 0.5 = Unacceptable. 0.5 to 1.49 = Capable. 1.5 to 2.49 = Adoptive. 2.5 or more = Transformative.
-3. Show the sum and the score to two decimals, so the person can check it and see it move. Do the same for the "with your answers" column and for the score after the rewrite. Levels are coarse, so the number is what shows progress.
+3. Show the sum and the score to two decimals, so the person can check it and see it move. Do the same for the "with your answers" column, for the score after the rewrite (every `[ASK]` empty), and for the possible score (every `[ASK]` filled with a real fact of the kind it asks for). The possible score is a ceiling to aim at, never a result. Levels are coarse, so the number is what shows progress.
 
 ## Bridges from pre-AI strengths
 
