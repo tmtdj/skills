@@ -1,118 +1,122 @@
 ---
 name: agent-era-cv
-description: Scores a CV or resume for AI fluency on a four-level scale, then rewrites its key lines for the agent era without inventing facts. Use when asked to review, score or rewrite a CV.
+description: Scores a CV or resume for AI fluency on a four-level scale, rewrites its key lines for the agent era without inventing facts, and builds a work plan to earn the missing lines for real. Use when someone asks to review, score, rewrite or update their CV or resume, or to check progress on their CV work plan. Not for writing a CV from scratch, cover letters or job posts.
 license: MIT
 metadata:
-  version: "1.0"
+  version: "1.1"
 ---
 
 # Agent-era CV
 
 Most CVs still prove how much you controlled. Employers now hire for how much you get done, and how fast, with AI.
-This skill scores a CV on nine AI-era skills, then rewrites the lines that matter most. Old and new sit side by side so the person can check every word.
+This skill scores a CV on nine AI-era skills, rewrites the lines that matter most, then gives the person real work to do so the missing lines become true. Old and new sit side by side so the person can check every word.
 
 ## Rules that never bend
 
-1. Never invent a number, tool, product, date, metric or claim. If a fact is missing, write `[ASK: what you need]`.
-2. Every number in a new line must appear in the CV or in the person's answers. Check this before you show the output.
-3. The person is the subject of every verb. Agents and AI tools are never the subject.
-4. Team results get team verbs. Only use solo verbs ("built", "cut", "grew") for work the person did alone.
+1. Never invent a number, tool, product, date, period, team size, data source, reviewer or claim. If a fact is missing, write `[ASK: what you need]`.
+2. Every fact in a new line must appear in the CV or in the person's answers. Check this before you show the output.
+3. The person is the subject of each line's main verb. Tools and agents can appear as "using X" or "with X", but they never do the action.
+4. Team results get team verbs. Only use solo verbs ("built", "cut", "grew") for work the person says they did alone.
 5. Never frame a win as cutting people. Lead with speed and output.
 6. Don't put the person's phone, email or home address in any file you save.
 7. Plain English and short lines. No em-dashes, buzzwords or filler words.
+
+## Step 0. Look for a work plan
+
+If `cv-work-plan.md` exists in the working folder, or the person attaches one, this is a follow-up run. Go to Step 9 first, then come back to Step 2 with the updated answers.
 
 ## Step 1. Ask first, then wait
 
 Ask these three questions in one message and wait for the answers. Don't score until you have them, or until the person says to go ahead without.
 
-1. What role and location are you targeting? (e.g. "Senior PM, Berlin" or "Founder or CPO, consumer, New Zealand")
+1. What role and location are you targeting? (e.g. "Senior PM, Berlin")
 2. What do you do with AI that isn't on here? (what you run, how often, what it ships, how you check it)
 3. Which results on this CV were yours alone, and which were team results?
 
-If they skip question 3, treat any result that mentions a team as a team result. Ask again in the output.
+If they skip question 3, keep each line's own verb unless the line names a team, and list every result line under Questions. If they refuse all three, score the page only, use the latest job title as the target role, and say so.
 
 ## Step 2. Scan
 
-1. Get the text a machine sees. Run `python3 scripts/scan.py <file>` (PDF, .docx, .txt or .md). If you can't run it, use `pdftotext -layout` for PDFs, or read the text directly.
-2. Write down: roles with dates, every bullet, every number, the skills section, and any AI mention (tool, product, course).
-3. If a line gives both a % change and a from-to pair, check the maths matches. If not, ask.
-4. Report the flags in plain words: broken words (a PDF that turns "Certificates" into "Certi cates"), symbols cut loose from their numbers, money with no currency, % changes with no baseline or period. The script is rough, so read the CV for more.
+1. Run `python3 scripts/scan.py <file>` (PDF, .docx, .txt or .md). If you can't run it, use `pdftotext -layout` for PDFs, or read the text directly.
+2. If the script exits with "No readable text", stop. Tell the person the file is probably a scanned image that hiring software can't read either, and ask for a text PDF or Word file. Never score a blank page.
+3. Write down: roles with dates, every bullet, every number, the skills section, and any AI mention.
+4. If a line gives both a % change and a from-to pair, check the maths matches. If not, ask.
+5. Report the flags in plain words. The script is rough, so read the CV for more.
+6. If the CV is not in English, score and rewrite in its language, and keep the person's exact wording in the Old column.
 
 ## Step 3. Score
 
-Read `references/scoring.md` and follow it exactly. In short:
+Read `references/scoring.md` and follow it exactly. Quote the CV line that earns each score, or write "no evidence". Give a second column for the person's answers, scored on the facts they gave, never on what they might add. Show the weighted score to two decimals and the level.
 
-- Score each of the nine skills on what the page shows, using the written rule:
-
-| Level | What the page must show |
-|---|---|
-| Unacceptable | No line shows it. |
-| Capable | The CV claims it, or names a tool or course, with no outcome. |
-| Adoptive | An outcome with a number and a baseline, or a workflow they built that produces a named output regularly or for others. Using a chat tool yourself, however often, is only Capable. |
-| Transformative | The person changed how a team or company works, with a number or proof a stranger could check. |
-
-- Quote the CV line that earns each score, or write "no evidence".
-- Add a second column for the person's answers from Step 1: the level they'd reach if that work went on the CV.
-- Weight the skills by target role using the table in `references/scoring.md`, then work out the overall level with its formula.
-- AI work from before agents (for example a GPT-3.5 or GPT-4 chat feature in 2023) counts for building and judgement. It doesn't count for delegating to agents.
-- Judgement counts any decision with a result, AI or not. Every other skill needs AI in the line. Pre-AI strengths go in the bridges (Step 4).
-- Give the weighted score to two decimals as well as the level.
-
-Then check four things and give a one-line verdict for each:
-1. Does it show speed and output (more done, faster), or only size and control (team counts, budgets)?
+Then give a one-line verdict on each:
+1. Does it show speed and output, or only size and control (team counts, budgets)?
 2. Does it say how AI was used and how the result was checked?
 3. Do the numbers have a baseline and a period?
 4. Are the verbs honest for team results?
 
 ## Step 4. Name the bridges
 
-People who did good work before AI are often one short step from an AI skill. Use the bridge table in `references/scoring.md`. For each bridge, write one line with what they have now and the AI version to add if it's true.
+Use the bridge table in `references/scoring.md`. One line each: what they have now, and the AI version to add if it's true.
 
 ## Step 5. Change list
 
-Rank 5 to 8 changes by how much each lifts the weighted score. One plain line each. Start each with Add, Cut or Reword. Always include, where they apply:
-- honest-verb fixes for team results
-- rewording cuts framing ("restructured", "reduced costs", "reduced headcount") toward what the change made possible, only if the CV or the person says what that was
-- missing baselines and units
-- the off-page AI work from Step 1, if it's not on the CV
+1. Trust fixes first, not ranked: solo verbs on team results, cuts framing ("restructured", "reduced costs", "reduced headcount"), numbers with no baseline or unit.
+2. Then up to 8 more, ranked by lift: weight x points the line would gain. Only count gains the CV or the answers can support. Don't pad a strong CV.
+3. One plain line each, starting with Add, Cut or Reword.
 
 ## Step 6. Rewrite
 
-Read `references/rewrite.md`. Rewrite the 4 to 6 lines that matter most for the target role. Use this formula:
+Read `references/rewrite.md` and `references/examples.md`. Rewrite the 4 to 6 lines that matter most for the target role, using:
 
 > Accomplished [X] against [baseline], measured by [Y], by doing [Z]. Optional: proved by [W].
 
-- Outcome and baseline first. The person stays the subject.
-- Mention agents at most once in the summary and once per role, and only where the speed gain is the point.
-- Add "proved by" only if a stranger could check it: a public link, a named test set, real users, a named reviewer.
 - Show a table: | Old | New |. Put `[ASK: ...]` wherever a fact is missing.
+- Don't add AI to a line unless the CV or the person says AI was part of that work.
+- If a line would need more than two `[ASK]` slots, show the old line and the questions, and leave the new line until they answer.
+- Never copy a value from the examples. Their slots are placeholders, not facts.
 
 ## Step 7. Check your own work
 
-Before you show anything:
-1. **Invented-fact check.** For each new line, list every number, tool and product name. Each must appear in the CV or the answers. If not, replace it with `[ASK: ...]`.
-2. **Verb check.** Compare each new verb with the old one and the Step 1 answer. "Helped" must not turn into "led". A team result must not turn into "I". Check every clause in the line. "AI agents write the code" makes the agents the subject. Write "I use AI agents to write the code".
+Before you show anything, do all four and show a one-line result for each:
+1. **Invented-fact check.** List every number, tool, product, date, period, team size, data source and reviewer in each new line. Each must appear in the CV or the answers. If not, replace it with `[ASK: ...]`.
+2. **Verb check.** "Helped" must not turn into "led". A team result must not turn into "I". Check every clause: "AI agents write the code" makes agents the subject. Write "I use AI agents to write the code".
 3. **Agent count.** At most one agent mention in the summary and one per role.
-4. **Rescore.** Score the nine skills again as if the new lines were filled in. Show before and after.
+4. **Rescore.** Score the new lines with every `[ASK]` treated as empty. The after-rewrite score can't beat the with-answers score unless every fact in the new lines is sourced.
 
-## Step 8. Output
+## Step 8. Work plan
 
-Use this order. Keep it short.
+The rewrite only fixes how true work is described. Missing lines need real work. Read `references/work-plan.md`.
 
-1. Overall level and weighted score: on the page, with your answers, and after the rewrite. One sentence why.
+1. For the target role, and for the current role if different, pick 3 to 5 tasks the person can do at their job. Tie each one to a high-weight skill that scored low, or to an `[ASK]` gap.
+2. Each task says: what to do, how long, what proof it leaves, and which CV line it would fill.
+3. Task sizes ("a 20-case test set", "4 weeks") are suggestions for the person, never facts for the CV. The CV line only gets a number once the person reports a real one.
+4. Frame every task as getting more done, faster, or better checked. Never as removing people.
+5. Offer to save `cv-work-plan.md` in the working folder, using the template in `references/work-plan.md`. It's private: no phone, email or address in it.
+
+## Step 9. Follow-up run (when a work plan exists)
+
+1. Read `cv-work-plan.md`. For each open task, ask: done, still going, or dropped? For done tasks, ask for the result, the baseline, the period and the proof.
+2. Turn only reported results into new CV lines, with Steps 6 and 7. A task marked done with no result stays an `[ASK]`.
+3. Update the file: status, result, proof and the new line. Never delete old rows; mark them done or dropped.
+4. Rescore, show the score before and after this round, and give the next 3 to 5 tasks.
+
+## Step 10. Output
+
+Keep it short, in this order:
+1. Overall level and weighted score: on the page, with your answers, after the rewrite. One sentence why.
 2. Scan flags.
 3. Score table: skill, weight, level on the page, level with your answers, evidence quote.
 4. The four checks.
 5. Bridges.
-6. Ranked change list.
-7. Old and new table.
-8. Questions: every `[ASK: ...]` gathered into one numbered list.
-9. Optional extras (below), only if they asked or it fits.
+6. Change list.
+7. Old and new table, then the Step 7 check results.
+8. Work plan.
+9. Questions: every `[ASK: ...]` in one numbered list.
 
 ## Optional extras
 
-- About-me file (private). Offer to draft `about-me.md`: roles, real results, how they work with AI, what they want next. They keep it private and give it to their own AI tools so every draft starts from facts.
-- Public resume.md or llms.txt. Only as an extra for people who like it. Never say it helps them get found. Ahrefs found 97% of llms.txt files got zero requests in a month, and Google says such files aren't needed for AI search.
+- About-me file (private). Offer to draft `about-me.md`: roles, real results, how they work with AI, what they want next. They give it to their own AI tools so every draft starts from facts.
+- Public resume.md or llms.txt. Only for people who like it. Never say it helps them get found. Ahrefs found 97% of llms.txt files got zero requests in a month, and Google says such files aren't needed for AI search.
 
 ## Cautions to pass on
 
@@ -121,8 +125,9 @@ Use this order. Keep it short.
 
 ## Files
 
-- `references/scoring.md`: the nine skills, the scoring rule, role weights, overall formula, bridges.
-- `references/rewrite.md`: the formula, verb rules, cuts framing, proof rules.
-- `references/examples.md`: worked example lines for six jobs, all made up.
+- `references/scoring.md`: levels, nine skills, role weights, formula, bridges.
+- `references/rewrite.md`: formula, verb rules, cuts framing, proof rules.
+- `references/examples.md`: made-up example lines for six jobs.
+- `references/work-plan.md`: task examples by role and the progress file template.
 - `references/sources.md`: where every number comes from.
 - `scripts/scan.py`: text extraction and flags.

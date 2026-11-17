@@ -8,19 +8,22 @@ The scale is adapted from Zapier's AI fluency rubric (Unacceptable, Capable, Ado
 |---|---|---|
 | Unacceptable | 0 | No line shows the skill. |
 | Capable | 1 | The CV claims it, or names a tool, course or AI product, with no outcome. |
-| Adoptive | 2 | An outcome with a number and a baseline (from X to Y, or X in Z weeks), or a repeatable system: a workflow the person built that produces a named output and runs regularly or is used by others. |
-| Transformative | 3 | The person changed how a team or company works, with a number, or proof a stranger could check (public link, named test set, live users, named reviewer). |
+| Adoptive | 2 | An outcome with a number and a baseline (from X to Y, or X compared with the old way), or a repeatable system: a workflow the person built that produces a named output and runs regularly or is used by others. |
+| Transformative | 3 | The person changed how a team or company works, with a before and after, or proof a stranger could check (public link, named test set, live users, named reviewer). A team size alone isn't enough. |
 
 How to apply it:
 - Score what the page says. Don't give credit for what you guess they did.
 - Take the highest level any single line earns. One line can count for more than one skill.
+- If you are unsure between two levels, take the lower one.
+- A team result scores for the person's own part. If the line doesn't say what they did, it's Capable at most.
 - A number without a baseline is still only Capable for an AI skill.
 - Using a chat or coding tool yourself, however often ("use ChatGPT daily"), is Capable. It becomes Adoptive only with an outcome and baseline, or when it's a workflow they built that produces something named (releases, reports, prototypes) on a schedule or for others.
 - A skill named only in the skills list ("prompt engineering") is Capable for that skill.
 - Skill 7 (judgement) counts any product or business decision with a result, with or without AI. Every other skill needs AI in the line.
 - Skill 8 (learning speed) needs evidence of change over time (tried, dropped, changed) or a course. Naming the tools someone uses doesn't count for skill 8.
-- The person's answers to "what do you do with AI that isn't on here?" go in a second column: the level they'd reach if that work were on the CV, written up with the rule above. Never mix it into the on-page score.
-- Pre-agent AI work (for example a GPT-3.5 or GPT-4 chat feature, a machine learning feature, before about 2024) counts for skill 6 (building) and skill 7 (judgement), and skill 3 (evals) if they measured the quality of the AI output. It doesn't count for skill 2 (delegating to agents).
+- The person's answers to "what do you do with AI that isn't on here?" go in a second column, scored with the same rule on the facts they gave. Never assume a number they didn't give. Never mix it into the on-page score.
+- After the rewrite, score `[ASK]` slots as empty.
+- Pre-agent AI work (for example a GPT-3.5 or GPT-4 chat feature, a machine learning feature, whatever the date) counts for skill 6 (building) and skill 7 (judgement), and skill 3 (evals) if they measured the quality of the AI output. It doesn't count for skill 2 (delegating to agents).
 - Pre-AI work (A/B testing, budgets, team leadership) doesn't score on the AI skills. It goes in the bridges list.
 
 ## The nine skills
@@ -37,7 +40,7 @@ How to apply it:
 
 ## Weights by target role
 
-3 = core, 2 = useful, 1 = minor. If the target role manages people, set skill 9 to 3.
+3 = core, 2 = useful, 1 = minor. If the target role has direct reports, set skill 9 to 3. If they name two target roles, use the first. If they give none, use their latest job title.
 
 | Skill | PM | Engineer | Designer | Data / analyst | Marketer | Ops | Founder / exec |
 |---|---|---|---|---|---|---|---|
