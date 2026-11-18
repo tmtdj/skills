@@ -6,7 +6,7 @@ Each new line shows three things: what the person did with AI or agents, what it
 
 ## Product manager
 - Cut: "Led cross-functional ceremonies", "Owned the roadmap", stakeholder counts.
-- Add: prototypes you build with AI tools, ideas tested per month, eval sets you wrote for AI features.
+- Add: prototypes you build with AI tools, ideas tested with users, eval sets you wrote for AI features.
 - Old (Example): "Owned the roadmap for the onboarding squad and worked with 4 teams."
 - New (Example): "Build working onboarding prototypes myself with AI coding tools, getting [N] ideas in front of real users a [period], up from [before]; each one checked against [success measure] before the team builds it."
 
@@ -14,7 +14,7 @@ Each new line shows three things: what the person did with AI or agents, what it
 - Cut: language lists with years next to them.
 - Add: what you hand to coding agents, how you brief them, how you check what comes back.
 - Old (Example): "Responsible for backend services using Python and Go."
-- New (Example): "Hand [type of change] to coding agents with a written brief and definition of done, shipping [N] changes a [period], up from [before]; every change passes a test suite I wrote before it merges."
+- New (Example): "Hand [type of change] to coding agents with a written brief and definition of done; every change passes a test suite I wrote before it merges; proved by [link]."
 
 ## Designer
 - Cut: tool lists, "pixel-perfect".
@@ -30,7 +30,7 @@ Each new line shows three things: what the person did with AI or agents, what it
 
 ## Marketer
 - Cut: channel lists, team size.
-- Add: AI draft-and-review workflows you built, tests per month, what checks the output.
+- Add: AI draft-and-review workflows you built, and what checks the output.
 - Old (Example): "Managed content calendar across 5 channels."
 - New (Example): "Draft content with AI and review every piece against [checklist] before it goes out, running [N] tests a [period], up from [before]."
 
@@ -38,8 +38,8 @@ Each new line shows three things: what the person did with AI or agents, what it
 - Cut: "Managed processes", "restructured the team to reduce costs".
 - Add: agent workflows you built, what one person now ships, what the freed time went to, how you check the agents.
 - Old (Example): "Restructured the support team to reduce costs."
-- New (Example): "Moved the support team to a ticket-routing workflow using AI, with every routing rule audited [how often]; gave the team [N] hours a week back for [what the time went to]."
-- Founder (Example): "Run [N] live apps alone, designing and testing each release and using AI agents to write the code, shipping [how often], up from [before]; each release checked against [checklist] before it goes live; proved by [link]."
+- New (Example): "Moved the support team to a ticket-routing workflow using AI, with every routing rule audited before it is used; gave the team time back for [what the time went to]."
+- Founder (Example): "Run live apps alone, using AI agents for [functions, for example code, marketing, web, video], and design and test each release; each release checked against [checklist] before it goes live; proved by [link]."
 
 ## Keep, pre-AI (Example)
 - Old (Example): "Grew [metric] from [before] to [after] in [period]."

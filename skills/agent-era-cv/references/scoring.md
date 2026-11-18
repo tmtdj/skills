@@ -20,7 +20,8 @@ How to apply it:
 - Using a chat or coding tool yourself, however often ("use ChatGPT daily"), is Capable. It becomes Adoptive only with an outcome and baseline, or when it's a workflow they built that produces something named (releases, reports, prototypes) on a schedule or for others.
 - A skill named only in the skills list ("prompt engineering") is Capable for that skill.
 - Skill 7 (judgement) counts any product or business decision with a result, with or without AI. Every other skill needs AI in the line.
-- Skill 9 (leading adoption) counts advisory clients and agent teams the person runs, when named. "Run my apps alone with a team of AI agents" is Capable for skill 9. It's Adoptive with a named output on a schedule, and Transformative with a before and after or checkable proof.
+- Skill 9 (leading adoption) counts advisory clients and agent teams the person runs, when named. "Run my apps alone with a team of AI agents", with no functions named, is Capable for skill 9.
+- Skill 2 (delegating) and skill 9 (when it is an agent team the person runs): running agents across several named business functions (for example code, marketing, copy, web, video, audio, ads) for a live product the person runs is Adoptive, with no output counts needed. Live product links, or other proof a stranger could check, make it Transformative. A before and after can still raise a line if they gave one. Never ask for output counts such as ads a week, videos a month or releases a month. Ask only for cost, a before and after, how the work is checked, and proof links.
 - Skill 8 (learning speed) needs evidence of change over time (tried, dropped, changed) or a course. Naming the tools someone uses doesn't count for skill 8.
 - The person's answers to "what do you do with AI that isn't on here?" go in a second column, scored with the same rule on the facts they gave. Never assume a number they didn't give. Never mix it into the on-page score.
 - After the rewrite, score `[ASK]` slots as empty.
@@ -29,15 +30,15 @@ How to apply it:
 
 ## The nine skills
 
-1. **Speeding up work with AI.** AI used in core work, with a before and after. Shows as: cycle time, time to ship, volume handled, ideas tested per month.
-2. **Delegating to agents.** Choosing what to hand an agent, writing a clear brief and a definition of done, reviewing what comes back. Shows as: what they run with agents, how often, what ships, how they check it.
+1. **Speeding up work with AI.** AI used in core work, with a before and after. Shows as: cycle time, time to ship, or volume compared with the old way.
+2. **Delegating to agents.** Choosing what to hand an agent, writing a clear brief and a definition of done, reviewing what comes back. Shows as: the named functions they run with agents, how they check the work, and any proof link or before and after. Several named functions on a live product is enough for Adoptive. Do not ask for output counts.
 3. **Evals.** Saying what good looks like for AI output and checking real outputs against it. Shows as: a test set of N cases, a pass rate from A% to B%, a quality checklist AI work is judged against.
 4. **Context engineering.** Giving AI exactly the information it needs. Shows as: context files, prompt or skill libraries a team uses.
 5. **Token and cost efficiency.** Knowing what an AI task costs and bringing it down. Shows as: cost per run from X to Y. Evidence that employers ask for this is thin, so weight it low unless the role is technical.
 6. **Building.** Making a working version yourself with AI tools. Shows as: shipped apps, prototypes, demos, repos, ideas tested with users.
 7. **Judgement and taste.** Picking the right problem when doing the work is cheap. Shows as: decisions made and what happened, ideas killed fast, an AI product chosen and launched with a result.
 8. **Learning speed.** How fast their AI use is improving. Shows as: what they tried, dropped and changed in the last 12 months.
-9. **Leading teams through AI adoption.** Getting a whole team working the new way. Shows as: team of N moved to agent workflows, cycle time from X to Y. Counts an employer team, an advisory client's team, or a team of AI agents the person runs, when the line names it. Never as heads removed.
+9. **Leading teams through AI adoption.** Getting a whole team working the new way. Shows as: a team moved to agent workflows, with a before and after if they have one. Counts an employer team, an advisory client's team, or a team of AI agents the person runs, when the line names it. For an agent team the person runs, several named functions on a live product is enough for Adoptive; live product links make it Transformative. Never as heads removed.
 
 ## Weights by target role
 
@@ -71,7 +72,7 @@ Founder / exec covers founder, CPO, CTO, VP and Head of roles. For a role not li
 | Budget or P&L ownership | Cost per task: what an AI workflow costs per run, and how they brought it down |
 | Leading teams, hiring, coaching | Delegating to agents, and leading the team's move to AI workflows |
 | Writing specs, briefs, PRDs | Context engineering: the briefs and context files agents work from |
-| Research, user testing | Faster learning loops: ideas tested per month with AI prototypes |
+| Research, user testing | Faster learning loops: ideas tested with AI prototypes, compared with the old way |
 | Process or ops design | Agent workflows with a checkpoint and a named reviewer |
 | Shipping products without code (with engineers) | Building: shipping working versions with AI coding tools |
 

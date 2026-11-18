@@ -3,7 +3,7 @@ name: agent-era-cv
 description: Scores a CV or resume for AI fluency on a four-level scale, rewrites its AI lines to show what the person does with AI, what it made possible and how they check it, without inventing facts, and builds a work plan to earn the missing lines for real. Use when someone asks to review, score, rewrite or update their CV or resume, or to check progress on their CV work plan. Not for writing a CV from scratch, cover letters or job posts.
 license: MIT
 metadata:
-  version: "1.2"
+  version: "1.3"
 ---
 
 # Agent-era CV
@@ -78,6 +78,7 @@ Read `references/rewrite.md` and `references/examples.md`. Each new line shows t
 
 - Show a table: | Old | New |. Put `[ASK: ...]` wherever a fact is missing.
 - Don't add AI to a line unless the CV or the person says AI was part of that work. For a line in group 2 of Step 5, show the old line and the targeted AI question instead of a new line.
+- Never ask for output counts such as ads a week, videos a month or releases a month, and never leave an `[ASK]` for one. If they already gave a number, you may use it. Ask only for facts that change the level: cost, a before and after, how the work is checked, and proof links.
 - Count missing facts, not brackets. If a line is missing more than two facts, show the old line and the questions, and leave the new line until they answer. One bracket that asks for two facts counts as two.
 - Never copy a value from the examples. Their slots are placeholders, not facts.
 
@@ -119,7 +120,7 @@ Keep it short, in this order:
 6. AI rewrite: the Old and New table, the "Keep, pre-AI" list, then the Step 7 check results.
 7. Trust checks.
 8. Work plan.
-9. Questions: targeted AI questions first (what the AI did, which models or agents, what the person did, how they checked it, what it made possible), then every other `[ASK: ...]`, in one numbered list.
+9. Questions: targeted AI questions first (what the AI did, which models or agents, what the person did, how they checked it, proof links, cost, a before and after). Never ask for output counts such as ads a week, videos a month or releases a month. Then every other `[ASK: ...]`, in one numbered list.
 
 ## Optional extras
 

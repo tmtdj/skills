@@ -11,7 +11,7 @@ The rewrite shows how AI changed the person's work. It only touches lines where 
 It grows out of Laszlo Bock's XYZ formula (Google, 2014): accomplished X, measured by Y, by doing Z. Here Z is the AI work, X is what it made possible, and the check is new.
 
 - Lead with what the person did with AI: "Run my apps alone with a team of AI agents...", "Designed and launched an assistant on [model]...".
-- Then what it made possible: release speed, output, ideas tested, what one person ships that once needed a team. A number with a baseline beats a claim.
+- Then what it made possible: what one person now ships, or a before and after if they gave one. Named functions on a live product are enough; do not ask for output counts to complete the line. A number with a baseline beats a claim when they already have one.
 - Then how they checked it: a test set, a review step, a named reviewer role, live users, a pass rate.
 - The person is the subject of the main verb. Tools and agents sit in the line as "using X" or "with X". They never do the action. Not "Agents built X", not "a workflow that handles X".
 - Agents at most once in the summary and once per role.
@@ -31,10 +31,12 @@ It grows out of Laszlo Bock's XYZ formula (Google, 2014): accomplished X, measur
 
 When the CV has few AI lines, generic questions ("what's the baseline?") don't help. Ask about the AI work itself, tied to a named line or product:
 - What did [AI product] do for users, which models did it run on, and how were its answers checked?
-- Which parts of [product] do agents build, and what do you do?
-- What do you hand to AI each week, and what comes back that you'd have done by hand before?
-- How fast do you ship now compared with before you used agents?
-These go first in the Questions list.
+- Which parts of [product] do agents handle (for example code, marketing, web, video), and what do you do?
+- How do you check the work before it ships?
+- Is there a live link or other proof a stranger could check?
+- What does the work cost, or how much faster is it than before, if you already know?
+
+Never ask for output counts such as ads a week, videos a month or releases a month, and never leave an `[ASK]` for one. If they already gave a number, you may use it. Ask only for facts that change the level: cost, a before and after, how the work is checked, and proof links. These questions go first in the Questions list.
 
 ## Honest verbs
 
