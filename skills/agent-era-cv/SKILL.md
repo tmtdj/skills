@@ -56,12 +56,17 @@ Read `references/scoring.md` and follow it exactly. Quote the CV line that earns
 
 This is the main output. Read `references/examples.md` for what a strong line shows in each job.
 
-1. **Rank by impact.** For each skill, impact = weight x the points it could gain. Work from the highest.
+1. **Rank by impact, in two groups.** Use the impact rule in `references/scoring.md`.
+   - **Already true, not on the page:** skills where the person's answers score higher than the page. Impact = weight x (answers points minus page points). These come first, because they need no new work.
+   - **Needs new work:** impact = weight x (3 minus answers points). These go to the work plan, not to "add a line".
+   One line can show several skills. Group them into one recommendation and name each skill it shows, rather than repeating the same advice per skill.
 2. **Where to add, per role or section.** Go through the top lines (headline and About, or the summary), then each role from the most recent. For each, say where an AI skill could go and what the line should show:
    > Under [role], add a line showing [skill]: [what it should show].
-   Only point to work the CV or the person's answers say happened, or that plainly fits the role. If it hasn't happened yet, say so and send it to the work plan.
-3. **What's missing entirely.** List the skills that score Unacceptable for the target role, highest weight first, one line each on what a line for it would need to show.
-4. **Every line carries its outcome.** Each recommendation names the outcome the line should show: a metric moved, with a before and after, that came from the AI work. If the person has no outcome yet, the recommendation says that is the gap.
+   If the work has no home on the CV yet (for example the person's own products), recommend a new role or section for it.
+   Only point to work the CV or the person's answers say happened. If it hasn't happened, it goes in the "needs new work" group and the work plan, never under a role.
+   You may list the facts from the answers that the line should carry, as a short list of facts. Don't join them into a finished CV sentence; that is a rewrite.
+3. **What's missing entirely.** List the skills that score Unacceptable in both columns (page and answers), highest weight first, one line each on what a line for it would need to show. Then list, in one line, the skills the answers show that the page doesn't.
+4. **Every line carries its outcome.** Each recommendation names the outcome the line should show: a user or business metric moved, with a before and after, that came from the AI work. Speed of work (cycle time, release cadence) is not the outcome on its own. If the person has no outcome yet, the recommendation says that is the gap.
 5. **The shape of a strong line.** When it helps, show the pattern, with slots only:
    > Moved [outcome] from [before] to [after] by [what you did with AI or agents], checked by [how you checked the work].
    A link people can open to see the work makes it stronger. Never fill a slot with an invented fact, and never copy a value from `references/examples.md`.
@@ -102,7 +107,7 @@ Keep it short, in this order:
 1. Overall level and weighted score: on the page, and with your answers. One sentence why.
 2. Scan flags.
 3. Score table: skill, weight, level on the page, level with your answers, evidence quote.
-4. Recommendations: where to add, per role or section, ranked by impact; then skills missing entirely; then bridges; then "leave as is".
+4. Recommendations: already true but not on the page, per role or section, ranked by impact; then what needs new work; then skills missing entirely; then bridges; then "leave as is" and old-world lines.
 5. Trust flags.
 6. Work plan.
 7. Questions, in one numbered list. Targeted AI questions first: what the AI did, which models or agents, what the person did, how they checked it, the outcome it moved with a before and after, cost, proof links. Never ask for output counts.

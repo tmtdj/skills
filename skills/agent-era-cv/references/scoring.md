@@ -17,7 +17,7 @@ How to apply it:
 - If you are unsure between two levels, take the lower one.
 - A team result scores for the person's own part. If the line doesn't say what they did, it's Capable at most.
 - A number without a baseline is still only Capable for an AI skill.
-- Skill 1 (outcomes from AI) needs a result that came from AI work. A metric moved with a before and after, where the line says AI or agents did part of the work, is Adoptive. Add a team or company-wide change, or proof a stranger could check, and it's Transformative. "Improved conversion with AI" with no number is Capable. A strong outcome line also scores for the skill it shows (speed, building, delegating and so on).
+- Skill 1 (outcomes from AI) needs a result that came from AI work. A metric moved with a before and after, where the line says AI or agents did part of the work, is Adoptive. Add a team or company-wide change, or proof a stranger could check, and it's Transformative. "Improved conversion with AI" with no number is Capable. An AI product or AI work named with no outcome claimed at all is Unacceptable for skill 1 (it may still score for building or speed). Cycle time, release cadence and output speed score for skill 3, not skill 1, unless the line also names a user or business metric they moved. A strong outcome line also scores for the skill it shows (speed, building, delegating and so on).
 - Skill 2 (judgement) counts any product or business decision with a result, with or without AI. Every other skill needs AI in the line.
 - Using a chat or coding tool yourself, however often ("use ChatGPT daily"), is Capable for skill 3 (speeding up work). It becomes Adoptive only with an outcome and baseline, or when it's a workflow they built that produces something named (releases, reports, prototypes) on a schedule or for others.
 - A skill named only in the skills list ("prompt engineering") is Capable for that skill.
@@ -32,7 +32,7 @@ How to apply it:
 
 In priority order, the same as the carousel this skill comes from.
 
-1. **Outcomes from AI.** A result that came from AI work: a metric moved, with a before and after. Shows as: conversion, revenue, retention, time to a decision or another named metric, from X to Y, where the line says what AI or agents did. Every other skill line should also carry the outcome it moved.
+1. **Outcomes from AI.** A result that came from AI work: a metric moved, with a before and after. Shows as: conversion, revenue, retention, activation, support load or another named user or business metric, from X to Y, where the line says what AI or agents did. Release speed alone is skill 3. Every other skill line should also carry the outcome it moved.
 2. **Judgement.** Picking the right problem when doing the work is cheap. Shows as: decisions made and what happened, ideas killed fast, an AI product chosen and launched with a result.
 3. **Speeding up work with AI.** AI used in core work, with a before and after. Shows as: cycle time or time to ship compared with the old way.
 4. **Delegating to agents.** Choosing what to hand an agent, writing a clear brief and a definition of done, reviewing what comes back. Shows as: the named functions they run with agents, how they check the work, and any proof link or before and after. Several named functions on a live product is enough for Adoptive. Do not ask for output counts.
@@ -67,7 +67,7 @@ Founder / exec covers founder, CPO, CTO, VP and Head of roles. For a role not li
 1. Work out the weighted average: sum of (weight x points) divided by sum of weights.
 2. Map it: below 0.5 = Unacceptable. 0.5 to 1.49 = Capable. 1.5 to 2.49 = Adoptive. 2.5 or more = Transformative.
 3. Show the sum and the score to two decimals for the page and for "with your answers", so the person can check it and see it move. Levels are coarse, so the number is what shows progress.
-4. Impact for ranking recommendations: weight x (3 minus the current points, using the "with your answers" level where there is one).
+4. Impact for ranking recommendations, in two groups. Already true, not on the page: weight x (answers points minus page points). Needs new work: weight x (3 minus answers points). The first group is ranked first, because it needs no new work.
 
 ## Bridges from pre-AI strengths
 
