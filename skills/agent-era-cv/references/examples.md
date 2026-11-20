@@ -1,63 +1,56 @@
-# Worked examples
+# What a strong line shows, by job
 
-Every line here is made up. None is a real person. Words in brackets are empty slots, not facts: [N], [before], [after], [period], [model], [product], [checklist], [reviewer role], [link]. Never copy a slot or its wording into a real rewrite. In a real rewrite, each slot is filled from the CV or the person's answers, or it becomes `[ASK: ...]`.
+Everything here is made up. None of it is a real person. Words in brackets are empty slots, not facts: [outcome], [before], [after], [N], [model], [product], [checklist], [reviewer role], [link]. These patterns tell you what to recommend. They are never lines to hand over, and no slot is ever filled for the person. Never copy a value or a wording from here into a recommendation as if it were a fact about them.
 
-Each new line shows three things: what the person did with AI or agents, what it made possible, and how they checked it.
+The base pattern for every job:
+
+> Moved [outcome] from [before] to [after] by [what you did with AI or agents], checked by [how you checked the work].
+
+A link people can open to see the work makes any line stronger.
 
 ## Product manager
-- Cut: "Led cross-functional ceremonies", "Owned the roadmap", stakeholder counts.
-- Add: prototypes you build with AI tools, ideas tested with users, eval sets you wrote for AI features.
-- Old (Example): "Owned the roadmap for the onboarding squad and worked with 4 teams."
-- New (Example): "Build working onboarding prototypes myself with AI coding tools, getting [N] ideas in front of real users a [period], up from [before]; each one checked against [success measure] before the team builds it."
+- Reads as old world: "owned the roadmap", stakeholder counts, alignment and ceremonies.
+- A strong line shows: prototypes you built with AI tools, ideas you put in front of real users, how fast, and the outcome they moved.
+- Pattern: "Moved [outcome] from [before] to [after] by building working prototypes with AI coding tools and testing them with real users, checked by [success measure]."
+- Skills it can show: 1 Outcomes, 2 Judgement, 3 Speeding up work, 6 Building it yourself.
 
 ## Engineer
-- Cut: language lists with years next to them.
-- Add: what you hand to coding agents, how you brief them, how you check what comes back.
-- Old (Example): "Responsible for backend services using Python and Go."
-- New (Example): "Hand [type of change] to coding agents with a written brief and definition of done; every change passes a test suite I wrote before it merges; proved by [link]."
+- Reads as old world: language lists with years next to them.
+- A strong line shows: what you hand to coding agents, how you brief them, how you check what comes back, the cost of a change if you know it, and the outcome it moved.
+- Pattern: "Moved [outcome] from [before] to [after] by handing [type of change] to coding agents with a written brief, checked by [test suite or review step] before it merges."
+- Skills it can show: 1 Outcomes, 4 Delegating to agents, 5 Evals, 8 Cost per task, 9 Context engineering.
 
 ## Designer
-- Cut: tool lists, "pixel-perfect".
-- Add: working prototypes you build with AI, directions explored, user tests.
-- Old (Example): "Created high-fidelity mockups in Figma for the checkout redesign."
-- New (Example): "Built working checkout prototypes with AI tools instead of static mockups, testing [N] directions in [after], down from [before]; checked in [N] recorded user tests."
+- Reads as old world: tool lists, "pixel-perfect".
+- A strong line shows: directions explored with AI, working prototypes, what you tested with real users, time to a validated design, and the outcome it moved.
+- Pattern: "Moved [outcome] from [before] to [after] by exploring [N] directions with AI tools and testing working prototypes with real users."
+- Skills it can show: 1 Outcomes, 2 Judgement, 3 Speeding up work, 6 Building it yourself.
 
 ## Data or analyst
-- Cut: "Created dashboards", lists of BI tools.
-- Add: research agents or AI queries you run, how you check AI-written queries.
-- Old (Example): "Built weekly KPI dashboards for the sales team."
-- New (Example): "Answer the sales team's weekly questions using a research agent on [data source], cutting time to an answer from [before] to [after]; every query checked against a [N]-case test set that [reviewer role] signs off."
+- Reads as old world: "created dashboards", lists of BI tools.
+- A strong line shows: research agents or AI queries you run, how you check AI-written queries, time to an answer, and the decision or metric it moved.
+- Pattern: "Moved [outcome] from [before] to [after] by answering [team]'s questions with a research agent on [data source], checked by [test set or reviewer role]."
+- Skills it can show: 1 Outcomes, 3 Speeding up work, 5 Evals, 9 Context engineering.
 
 ## Marketer
-- Cut: channel lists, team size.
-- Add: AI draft-and-review workflows you built, and what checks the output.
-- Old (Example): "Managed content calendar across 5 channels."
-- New (Example): "Draft content with AI and review every piece against [checklist] before it goes out, running [N] tests a [period], up from [before]."
+- Reads as old world: channel lists, team size.
+- A strong line shows: AI content or campaign workflows you built, how you check the output, cost per asset if you know it, and the outcome they moved. Don't ask for counts of ads or posts.
+- Pattern: "Moved [outcome] from [before] to [after] by building an AI content workflow, checked by [checklist] before anything goes out."
+- Skills it can show: 1 Outcomes, 3 Speeding up work, 4 Delegating to agents, 5 Evals.
 
-## Ops or founder
-- Cut: "Managed processes", "restructured the team to reduce costs".
-- Add: agent workflows you built, what one person now ships, what the freed time went to, how you check the agents.
-- Old (Example): "Restructured the support team to reduce costs."
-- New (Example): "Moved the support team to a ticket-routing workflow using AI, with every routing rule audited before it is used; gave the team time back for [what the time went to]."
-- Founder (Example): "Run live apps alone, using AI agents for [functions, for example code, marketing, web, video], and design and test each release; each release checked against [checklist] before it goes live; proved by [link]."
+## Manager, ops or founder
+- Reads as old world: "managed processes", headcount and budget size on their own, "restructured the team to reduce costs".
+- A strong line shows: a lean team shipping more with agents, what the team ships now against before, how the team was led onto AI, and the outcome it moved. Removing bloated process or tools can be a bonus, never removing people.
+- Pattern (manager): "Moved my team of [N] onto agent workflows, taking [cycle] from [before] to [after], which moved [outcome] from [before] to [after]."
+- Pattern (founder running agents): "Run [product] with AI agents for [named functions], which moved [outcome] from [before] to [after], checked by [checklist]; see [link]."
+- Skills it can show: 1 Outcomes, 2 Judgement, 4 Delegating to agents, 7 Getting a team onto AI.
 
-## Keep, pre-AI (Example)
-- Old (Example): "Grew [metric] from [before] to [after] in [period]."
-- Label: keep, pre-AI. A strong result with a baseline. Don't rewrite it to add AI.
+## Sample recommendation (made up)
 
-## Bad rewrites, and why
+> Under [current role], add a line showing Outcomes from AI: the metric your [AI feature] moved, with a before and after. You told me it runs on [model] and is checked by [review step], so the gap is the outcome. Pattern: "Moved [outcome] from [before] to [after] by [what you did with AI], checked by [how you checked]."
 
-- Bad (Example): "Agents automated weekly reporting using a Claude-powered research pipeline."
-- Why it fails: agents are the subject, there's no check, nothing says what it made possible, and a tool name sits where the result should be.
-- Bad (Example): "Grew sign-ups by [N]% from [before] over [period], measured by [metric]."
-- Why it fails as a rewrite: it only adds a baseline and a period to a pre-AI line. That belongs in Trust checks, not the rewrite.
-- Bad (Example): "Cut support costs by replacing [N] support staff with an AI workflow."
-- Why it fails: it sells the win as removing people. Lead with what the team could now do, and only with facts the person gave.
-- Bad (Example): "Used GPT-4 to cut reporting from 3 days to 4 hours in Q3."
-- Why it fails if the person never said it: the model, every number and the period were invented. Each must come from the CV or an answer, or be an `[ASK]`.
-
-## Sample score row (Example)
+## Sample score row (made up)
 
 | Skill | Weight | On the page | With your answers | Evidence |
 |---|---|---|---|---|
-| 3 Evals | 3 | Capable | Adoptive | "Wrote quality guidelines for our AI support replies" (claim, no number). Answer: a [N]-case test set, pass rate from [before] to [after]. |
+| 5 Evals | 3 | Capable | Adoptive | "Wrote quality guidelines for our AI support replies" (claim, no number). Answer: a [N]-case test set, pass rate from [before] to [after]. |
