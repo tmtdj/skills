@@ -1,17 +1,19 @@
 ---
 name: agent-era-cv
-description: Scores a CV or resume for AI fluency on a four-level scale, rewrites its AI lines to show what the person does with AI, what it made possible and how they check it, without inventing facts, and builds a work plan to earn the missing lines for real. Use when someone asks to review, score, rewrite or update their CV or resume, or to check progress on their CV work plan. Not for writing a CV from scratch, cover letters or job posts.
+description: Scores a LinkedIn profile, CV or resume for AI fluency on a four-level scale, rewrites its AI lines to show what the person does with AI, what it made possible and how they check it, without inventing facts, and builds a work plan to earn the missing lines for real. Use when someone asks to review, score, rewrite or update their LinkedIn profile, CV or resume, or to check progress on their CV work plan. Not for writing a CV from scratch, cover letters or job posts.
 license: MIT
 metadata:
-  version: "1.3"
+  version: "1.4"
 ---
 
 # Agent-era CV
 
 Most CVs still prove how much you controlled. Employers now hire for how much you get done, and how fast, with AI.
-This skill scores a CV on nine AI-era skills, rewrites the lines where AI is or should be part of the work, then gives the person real work to do so the missing lines become true. Old and new sit side by side so the person can check every word.
+This skill scores a LinkedIn profile or CV on nine AI-era skills, rewrites the lines where AI is or should be part of the work, then gives the person real work to do so the missing lines become true. Old and new sit side by side so the person can check every word.
 
 The rewrite is about how AI changed the work. It is not a general CV edit. Generic gaps (a missing baseline, period or currency) get one line each in a short Trust checks list, not a rewrite.
+
+A LinkedIn profile counts as a CV here. The person can attach the PDF from LinkedIn's Save to PDF option or paste the text. Treat the headline and About section as the top lines, and each role's description as that role's lines. Wherever this skill says CV, read profile or CV.
 
 ## Rules that never bend
 

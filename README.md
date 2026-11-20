@@ -4,7 +4,7 @@ Agent skills by Tim. Free to use under the MIT licence.
 
 ## agent-era-cv
 
-Your CV was built to prove how much you controlled. Employers now hire for how much you get done, and how fast, with AI. This skill checks your CV for that and helps you fix it.
+Your CV was built to prove how much you controlled. Employers now hire for how much you get done, and how fast, with AI. This skill checks your LinkedIn profile or CV for that and helps you fix it.
 
 It does six things:
 
@@ -21,7 +21,7 @@ It does six things:
 npx skills add timdej/skills
 ```
 
-Then ask your agent: "Review my CV with agent-era-cv" and attach your CV (PDF, Word or text).
+Then ask your agent: "Review my CV with agent-era-cv" and attach your CV or LinkedIn profile (PDF, Word or text). For LinkedIn, use its Save to PDF option or paste the text.
 
 Works with Claude Code, Cursor, Codex and other agents the `skills` CLI supports. The scan script needs Python 3, plus `pdftotext` (poppler) for PDFs.
 
