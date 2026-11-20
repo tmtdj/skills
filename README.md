@@ -19,7 +19,7 @@ The answer fits on one screen. Ask for the full breakdown to see the score for e
 ## Install
 
 ```bash
-npx skills add timdej/skills
+npx skills add tmtdj/skills
 ```
 
 Then ask your agent: "Review my CV with agent-era-cv" and attach your CV or LinkedIn profile (PDF, Word or text). For LinkedIn, use its Save to PDF option or paste the text.
