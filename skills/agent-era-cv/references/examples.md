@@ -47,9 +47,10 @@ A link people can open to see the work makes any line stronger.
 
 ## Sample recommendation (made up)
 
-> Under [current role], add a line showing Outcomes from AI: the metric your [AI feature] moved, with a before and after. You told me it runs on [model] and is checked by [review step], so the gap is the outcome. Pattern: "Moved [outcome] from [before] to [after] by [what you did with AI], checked by [how you checked]."
+> Under [current role], add a line showing the result your [AI feature] moved, with a before and after. You told me it runs on [model] and is checked by [review step], so the missing piece is the result. Pattern: "Moved [outcome] from [before] to [after] by [what you did with AI], checked by [how you checked]."
+> Tell me: which metric did [AI feature] move, from what to what?
 
-## Sample score row (made up)
+## Sample score row (made up, full breakdown only)
 
 | Skill | Weight | On the page | With your answers | Evidence |
 |---|---|---|---|---|

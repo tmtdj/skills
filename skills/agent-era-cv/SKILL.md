@@ -1,15 +1,15 @@
 ---
 name: agent-era-cv
-description: Scores a LinkedIn profile, CV or resume for AI fluency on ten AI-era skills and a four-level scale, recommends where in each role the person could add AI skills and which skills are missing, ranked by impact, and builds a work plan of real tasks to make the missing lines true. Use when someone asks to review, score or check their LinkedIn profile, CV or resume, or to check progress on their CV work plan. Not for writing or rewriting a CV, cover letters or job posts.
+description: Scores a LinkedIn profile, CV or resume out of 10 for AI fluency across ten AI-era skills, leads with the top 3 places to add AI skills and what is missing, and builds a short work plan of real tasks to make the missing lines true. Use when someone asks to review, score or check their LinkedIn profile, CV or resume, or to check progress on their CV work plan. Not for writing or rewriting a CV, cover letters or job posts.
 license: MIT
 metadata:
-  version: "2.0"
+  version: "2.1"
 ---
 
 # Agent-era CV
 
 Most CVs still prove how much you controlled. Employers now hire for what you get done with AI, and the outcomes it moves.
-This skill scores a LinkedIn profile or CV on ten AI-era skills, then recommends where AI skills could go in each role and which skills are missing, ranked by impact. It gives the person real work to do so the missing lines become true.
+This skill scores a LinkedIn profile or CV out of 10 on ten AI-era skills, then leads with the top 3 changes: where AI skills could go and what is missing. It gives the person real work to do so the missing lines become true. The default answer fits on one screen; the full breakdown is there if they ask.
 
 It does not rewrite the CV. Writing the lines is the person's job. The skill says where a line could go and what a strong line shows, and the person writes it in their own words.
 
@@ -45,72 +45,81 @@ If they refuse all three, score the page only, use the latest job title as the t
 2. If the script exits with "No readable text", stop. Tell the person the file is probably a scanned image that hiring software can't read either, and ask for a text PDF or Word file. Never score a blank page.
 3. Write down: roles with dates, every line, every number, the skills section, and every AI mention.
 4. If a line gives both a % change and a from-to pair, check the maths matches. If not, ask.
-5. Report the flags in plain words. The script is rough, so read the CV for more.
+5. Note the flags for Step 5. The script is rough, so read the CV for more.
 6. If the CV is not in English, score and recommend in its language, and quote the person's exact wording.
 
-## Step 3. Score
+## Step 3. Score (internal)
 
-Read `references/scoring.md` and follow it exactly. Quote the CV line that earns each score, or write "no evidence". Give a second column for the person's answers, scored on the facts they gave, never on what they might add. Show the weighted score to two decimals and the level, for the page and with their answers.
+Read `references/scoring.md` and follow it exactly. For each skill, note the CV line that earns the score, or "no evidence", and a second score for the person's answers, on the facts they gave, never on what they might add. This is your working. The person sees a plain score out of 10 (see `references/scoring.md`), never level names or the table, unless they ask for the full breakdown.
 
 ## Step 4. Recommend
 
 This is the main output. Read `references/examples.md` for what a strong line shows in each job.
 
 1. **Rank by impact, in two groups.** Use the impact rule in `references/scoring.md`.
-   - **Already true, not on the page:** skills where the person's answers score higher than the page. Impact = weight x (answers points minus page points). These come first, because they need no new work.
-   - **Needs new work:** impact = weight x (3 minus answers points). These go to the work plan, not to "add a line".
-   One line can show several skills. Group them into one recommendation and name each skill it shows, rather than repeating the same advice per skill.
-2. **Where to add, per role or section.** Go through the top lines (headline and About, or the summary), then each role from the most recent. For each, say where an AI skill could go and what the line should show:
-   > Under [role], add a line showing [skill]: [what it should show].
+   - **Already true, not on the page:** skills where the person's answers score higher than the page. These come first, because they need no new work.
+   - **Needs new work:** skills still low with the answers. These go to the work plan, not to "add a line".
+   One line can show several skills. Group them into one recommendation, so the same advice never appears twice.
+2. **Where to add.** Say where the line goes (the headline and About, or the summary, or a named role) and what it should show:
+   > Under [role], add a line showing [what it should show].
    If the work has no home on the CV yet (for example the person's own products), recommend a new role or section for it.
-   Only point to work the CV or the person's answers say happened. If it hasn't happened, it goes in the "needs new work" group and the work plan, never under a role.
-   You may list the facts from the answers that the line should carry, as a short list of facts. Don't join them into a finished CV sentence; that is a rewrite.
-3. **What's missing entirely.** List the skills that score Unacceptable in both columns (page and answers), highest weight first, one line each on what a line for it would need to show. Then list, in one line, the skills the answers show that the page doesn't.
-4. **Every line carries its outcome.** Each recommendation names the outcome the line should show: a user or business metric moved, with a before and after, that came from the AI work. Speed of work (cycle time, release cadence) is not the outcome on its own. If the person has no outcome yet, the recommendation says that is the gap.
-5. **The shape of a strong line.** When it helps, show the pattern, with slots only:
+   Only point to work the CV or the person's answers say happened. If it hasn't happened, it goes in the work plan, never under a role.
+   You may list the facts from the answers that the line should carry. Don't join them into a finished CV sentence; that is a rewrite.
+3. **Every line carries its outcome.** Each recommendation names the outcome the line should show: a user or business metric moved, with a before and after, that came from the AI work. Speed of work (cycle time, release cadence) is not the outcome on its own. If the person has no outcome yet, say that is the gap.
+4. **The shape of a strong line.** When it helps, show the pattern, with slots only:
    > Moved [outcome] from [before] to [after] by [what you did with AI or agents], checked by [how you checked the work].
-   A link people can open to see the work makes it stronger. Never fill a slot with an invented fact, and never copy a value from `references/examples.md`.
-6. **Bridges.** Use the bridge table in `references/scoring.md` for pre-AI strengths: what they have now, and the AI version to show if it's true.
-7. **Leave as is.** Name strong pre-AI results that should stay as they are, with one short reason each. Don't pad a strong CV.
-8. **Old-world lines.** You may name lines that only show size or control (team counts, budgets, "owned the roadmap"). Quote them. Don't write a replacement.
+   Never fill a slot with an invented fact, and never copy a value from `references/examples.md`.
+5. **Questions sit with what they unlock.** If a recommendation needs a fact you don't have, put the question right under it: "Tell me: [question]". There is no separate question list.
+6. **Fold in, don't list separately.** Lines that only show size or control (team counts, budgets, "owned the roadmap") go inside the recommendation they make room for, quoted, with no replacement written. Pre-AI strengths that map across (see the table in `references/scoring.md`) go inside the recommendation they support. Strong pre-AI results that should stay as they are get one short mention, only if the person might otherwise cut them.
+7. **Plain words.** Name skills in plain words. The first time you mention context engineering, explain it: giving the AI the right information before it starts (docs, examples, rules, data).
 
-## Step 5. Trust flags
+## Step 5. Problems to fix
 
-One plain line each, no rewritten line:
-- Missing baseline: "[number] has no starting level."
-- Missing period: "[number] has no period."
-- Missing currency or unit: "[number] has no currency" or "[number] doesn't say what it counts."
-- Cuts framing: "Restructured", "reduced costs", "reduced headcount" or "streamlined the team" read as cuts. Suggest leading with what the change sped up or made possible.
-- Solo verb on a team result: if a line uses "built", "cut" or "grew" and the line or its role names a team or team size, say so in one line, e.g. "Line 4 says 'built' and the role names a team of 8. Readers may ask what your part was." Don't flag it if the person said the result was theirs alone.
+Merge the scan flags, the trust checks and any gap questions into one list. Each problem appears once, with its question next to it if it needs one. Types:
+- File problems from the scan (broken words, symbols that came loose, a scanned image).
+- Numbers with no starting level, no period, or no currency or unit.
+- Cuts framing: "restructured", "reduced costs", "reduced headcount" or "streamlined the team" read as cuts. Suggest leading with what the change sped up or made possible.
+- Solo verb on a team result: if a line uses "built", "cut" or "grew" and the line or its role names a team or team size, say so plainly, e.g. "These say 'reduced' and 'increased' for team results. Readers may ask what your part was." Don't flag it if the person said the result was theirs alone.
+Group like problems into one line (all missing starting levels in one line, not one line each).
 
 ## Step 6. Work plan
 
 Recommendations only help where the work happened. Missing lines need real work. Read `references/work-plan.md`.
 
-1. For the target role, and for the current role if different, pick 3 to 5 tasks the person can do at their job, with their clients, or on their own products. Tie each one to a high-weight skill that scored low or is missing.
-2. Each task is AI work: what to hand to AI or agents, how to check it, how long, what outcome to measure, what proof it leaves, and which recommendation it would make true.
+1. Pick tasks the person can do at their job, with their clients, or on their own products, tied to high-weight skills still low with the answers.
+2. Each task is AI work: what to hand to AI or agents, how to check it, how long, what outcome to measure, what proof it leaves.
 3. Task sizes ("a 20-case test set", "4 weeks") are suggestions for the person, never facts for the CV.
 4. Frame every task as getting more done, faster, or better checked. Never as removing people.
-5. Offer to save `cv-work-plan.md` in the working folder, using the template in `references/work-plan.md`. It's private: no phone, email or address in it.
+5. The default output shows at most 3 tasks, a title and one line each. The full breakdown has 3 to 5 tasks in full and offers to save `cv-work-plan.md` in the working folder, using the template in `references/work-plan.md`. It's private: no phone, email or address in it.
 
 ## Step 7. Follow-up run (when a work plan exists)
 
 1. Read `cv-work-plan.md`. For each open task, ask: done, still going, or dropped? For done tasks, ask for the outcome, the before and after, the period and the proof.
-2. Score reported results in the "with your answers" column. Tell the person which recommendations are now ready for them to write up. Don't write the lines. A task marked done with no result stays open in the plan.
+2. Score reported results with the answers. Tell the person which recommendations are now ready for them to write up. Don't write the lines. A task marked done with no result stays open in the plan.
 3. If they attach an updated CV, score the page again.
 4. Update the file: status, result and proof. Never delete old rows; mark them done or dropped.
-5. Show the score before and after this round, and give the next 3 to 5 tasks.
+5. Show the score out of 10 before and after this round, and give the next tasks.
 
 ## Step 8. Output
 
-Keep it short, in this order:
-1. Overall level and weighted score: on the page, and with your answers. One sentence why.
-2. Scan flags.
-3. Score table: skill, weight, level on the page, level with your answers, evidence quote.
-4. Recommendations: already true but not on the page, per role or section, ranked by impact; then what needs new work; then skills missing entirely; then bridges; then "leave as is" and old-world lines.
-5. Trust flags.
-6. Work plan.
-7. Questions, in one numbered list. Targeted AI questions first: what the AI did, which models or agents, what the person did, how they checked it, the outcome it moved with a before and after, cost, proof links. Never ask for output counts.
+### Default: fits on one screen
+
+Lead with the answer. Use exactly these parts, in this order, and nothing else:
+
+1. **Verdict, one line.** "Your profile scores [X]/10 as it stands, [Y]/10 with what you told me." Then one short line on why. If they gave no answers, show one score.
+2. **Top 3 changes.** The three highest-impact recommendations from Step 4, each two or three lines: where, what it should show, and "Tell me:" with the question if a fact is missing.
+3. **Also fix.** The merged list from Step 5, at most 4 lines, highest impact first.
+4. **Next 3 things to do.** At most 3 work plan tasks, a title and one line each.
+5. **The offer, as the last line:** "Want the full breakdown? It has the score for each skill, every flag, and the full work plan you can save."
+
+No headings other than these, no tables, no level names, no skill numbers. Aim for about 25 lines.
+
+### Full breakdown: only when asked
+
+1. Score table: skill, weight, level on the page, level with your answers, evidence quote. Level names are fine here.
+2. Every recommendation, ranked, including the ones past the top 3, and what you already have that maps across.
+3. Every flag from Step 5, with its question.
+4. The full work plan (3 to 5 tasks) and the offer to save `cv-work-plan.md`.
 
 ## Optional extras
 
@@ -124,7 +133,7 @@ Keep it short, in this order:
 
 ## Files
 
-- `references/scoring.md`: levels, the ten skills, role weights, overall score, bridges.
+- `references/scoring.md`: levels, the ten skills, role weights, the score out of 10, what maps across from pre-AI work.
 - `references/examples.md`: made-up patterns of what a strong line shows in six jobs, slots only.
 - `references/work-plan.md`: task examples by role and the progress file template.
 - `references/sources.md`: where every number comes from.

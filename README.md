@@ -9,10 +9,12 @@ Your CV was built to prove how much you controlled. Employers now hire for what 
 It does five things:
 
 1. Asks three questions first (your target role, the AI work missing from your CV, and which results were yours alone).
-2. Scans the CV the way a machine reads it and flags broken words and numbers with no baseline.
-3. Scores ten AI-era skills on a four-level scale adapted from Zapier's hiring rubric, with a quote from your CV for each score.
-4. Recommends, role by role, where an AI skill could go and what the line should show, plus the skills that are missing entirely, ranked by impact. It never makes up a fact.
-5. Gives you 3 to 5 tasks to do at your job so the missing lines become true, each with the outcome to measure and the proof it leaves. It can save them in a private `cv-work-plan.md`. Run the skill again later and it asks what you finished, rescores you and gives the next tasks.
+2. Scans the CV the way a machine reads it.
+3. Gives you a score out of 10 across ten AI-era skills, based on Zapier's AI fluency hiring rubric.
+4. Leads with the top 3 changes: where an AI skill could go and what the line should show, with any question it needs right next to it. It never makes up a fact.
+5. Gives you up to 3 tasks to do at your job so the missing lines become true.
+
+The answer fits on one screen. Ask for the full breakdown to see the score for each skill, every flag, and a work plan you can save as a private `cv-work-plan.md`. Run the skill again later and it asks what you finished and rescores you.
 
 ## Install
 

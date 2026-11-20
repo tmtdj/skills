@@ -22,11 +22,12 @@ How to apply it:
 - Using a chat or coding tool yourself, however often ("use ChatGPT daily"), is Capable for skill 3 (speeding up work). It becomes Adoptive only with an outcome and baseline, or when it's a workflow they built that produces something named (releases, reports, prototypes) on a schedule or for others.
 - A skill named only in the skills list ("prompt engineering") is Capable for that skill.
 - Skill 4 (delegating) and skill 7 (when it is an agent team the person runs): running agents across several named business functions (for example code, marketing, copy, web, video, audio, ads) for a live product the person runs is Adoptive, with no output counts needed. Live product links, or other proof a stranger could check, make it Transformative. A before and after can still raise a line if they gave one. Never ask for output counts such as ads a week, videos a month or releases a month. Ask only for the outcome, cost, a before and after, how the work is checked, and proof links.
+- No double counting between skill 4 (delegating) and skill 7 (getting a team onto AI). One line or one answer scores for at most one of them: the one with the higher weight for the target role. If the weights are equal, score it under skill 4, unless the line names a human team. The other skill can still score from a different line or answer.
 - Skill 7 (getting a team onto AI) counts advisory clients and agent teams the person runs, when named. "Run my apps alone with a team of AI agents", with no functions named, is Capable for skill 7.
 - Skill 10 (learning speed) needs evidence of change over time (tried, dropped, changed) or a course. Naming the tools someone uses doesn't count for skill 10.
 - The person's answers to "what do you do with AI that isn't on here?" go in a second column, scored with the same rule on the facts they gave. Never assume a number they didn't give. Never mix it into the on-page score.
 - Pre-agent AI work (for example a GPT-3.5 or GPT-4 chat feature, a machine learning feature, whatever the date) counts for skill 1 (outcomes) if it moved a metric, skill 2 (judgement), skill 6 (building), and skill 5 (evals) if they measured the quality of the AI output. It doesn't count for skill 4 (delegating to agents).
-- Pre-AI work (A/B testing, budgets, team leadership) doesn't score on the AI skills. It goes in the bridges list.
+- Pre-AI work (A/B testing, budgets, team leadership) doesn't score on the AI skills. It goes in "what you already have that maps across".
 
 ## The ten skills
 
@@ -66,10 +67,10 @@ Founder / exec covers founder, CPO, CTO, VP and Head of roles. For a role not li
 
 1. Work out the weighted average: sum of (weight x points) divided by sum of weights.
 2. Map it: below 0.5 = Unacceptable. 0.5 to 1.49 = Capable. 1.5 to 2.49 = Adoptive. 2.5 or more = Transformative.
-3. Show the sum and the score to two decimals for the page and for "with your answers", so the person can check it and see it move. Levels are coarse, so the number is what shows progress.
+3. The person sees a score out of 10: weighted average / 3 x 10, to one decimal (for example 1.83 becomes 6.1). Show it for the page and for "with your answers". Level names, sums and the table only appear in the full breakdown. Levels are coarse, so the number is what shows progress.
 4. Impact for ranking recommendations, in two groups. Already true, not on the page: weight x (answers points minus page points). Needs new work: weight x (3 minus answers points). The first group is ranked first, because it needs no new work.
 
-## Bridges from pre-AI strengths
+## What you already have that maps across
 
 | They already have | The AI version to show, if true |
 |---|---|
@@ -82,4 +83,4 @@ Founder / exec covers founder, CPO, CTO, VP and Head of roles. For a role not li
 | Shipping products without code (with engineers) | Building it yourself: shipping working versions with AI coding tools |
 | Results with a before and after | Outcomes from AI: the same kind of result, where AI did part of the work |
 
-Write each bridge as one line. Only suggest the AI version if it's true. Never write it into the CV for them.
+Fold each one into the recommendation it supports. Only suggest the AI version if it's true. Never write it into the CV for them.
